@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+/* Global reset */
+
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  body{
+    background: linear-gradient(to right, #4d648a, #7389b3);
+  }
+
+  /* Root styling */
+  #root {
+    height: 150vh;
+    background: linear-gradient(to right, #4d648a, #7389b3); /* Gradiente suave */
+    display: flex;
+     flex-direction: column; /* Garante que o layout dentro do root ocupe o espaço de forma flexível */
+    justify-content: flex-start; /* Inicia o conteúdo no topo da tela */
+  }
+  
+  /* Layout App */
+  .app {
+    display: flex;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif; /* Fonte mais moderna */
+  }
+  
+  /* Textarea styling */
+  textarea {
+    width: 100%;
+    height: 120px;  
+    resize: none; /* Impede o redimensionamento */
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #7389b3;
+    background-color: #f1f5fa;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  textarea:focus {
+    outline: none;
+    border-color: #afc5f8; /* Cor de foco */
+    box-shadow: 0 0 5px rgba(166, 192, 251, 0.5); /* Sombras suaves ao focar */
+  }
+  
+  /* Label styling */
+  label {
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    font-size: 18px;
+    color: #afc5f8;
+    font-weight: 500;
+  }
+  
+  /* Form Comentário */
+  .formComentario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 15px; /* Aumenta o espaçamento entre campos */
+    width: 30%; /* Largura mais confortável */
+    background-color: #263f62; /* Fundo branco para destacar */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  }
+  
+  /* Inputs e Textarea */
+  input, textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #7389b3;
+    padding: 12px;
+    background-color: #f1f5fa;
+    font-size: 16px;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #afc5f8;
+    box-shadow: 0 0 5px rgba(166, 192, 251, 0.5);
+  }
+  
+  /* Botão */
+  button {
+    padding: 12px 20px;
+    background-color: #7389b3;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #afc5f8;
+    transform: translateY(-2px); /* Pequeno efeito de elevação */
+  }
+  
+  button:active {
+    transform: translateY(2px); /* Efeito quando pressionado */
+  }
+  
+  /* Lista de comentários */
+  .CommentList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    width: 75%;
+    margin-top: 30px;
+    background-color: #263f62;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo de cada comentário */
+  .emailComentario {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  .dataComentario {
+    font-size: 13px;
+    text-decoration: underline;
+    color: #001a3a;
+  }
+  
+  .comentarioPostado {
+    font-size: 20px;
+    color: #afc5f8;
+    margin-top: 5px;
+  }
+  
+  /* Título */
+  h1 {
+    color: #001a3a;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-family: "Josefin Sans";
+  }
+  
